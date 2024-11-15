@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from config import Config, db_connection
+from .config import Config, db_connection
 app=Flask(__name__)
 app.config.from_object(Config)
 @app.route('/vehiculo',methods=['GET'])
